@@ -24,10 +24,9 @@ status = 200
   for = "/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
-
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "frame-ancestors"
+    Content-Security-Policy = "default-src https:"
     cache-control = '''
     max-age=0,
     no-cache,
