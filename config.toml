@@ -3,7 +3,16 @@ languageCode = "de-de"
 title = "Markus Hartmann"
 paginate = 5
 theme = "hugo-clarity"
-twitter = "_markushartmann"
+
+[params]
+twitter = "@_markushartmann"
+mobileNavigation = "right"
+numberOfRecentPosts = 5
+numberOfFeaturedPosts = 3
+env = "production"
+title = "Markus Hartmann"
+description = ";-)"
+author = "Markus Hartmann"
 
 enableRobotsTXT= true
 buildDrafts= false
@@ -13,10 +22,3 @@ buildExpored= false
 [minify]
 disableXML = true
 minifyOutput= true
-
-[params]
-env = "production"
-title = "Markus Hartmann"
-description = ";-)"
-author = "Me"
-
