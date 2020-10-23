@@ -1,6 +1,6 @@
 ---
-title: "Intro"
-date: 2020-10-23T20:35:18+02:00
+title: "Privacy"
+date: 2020-10-23T21:00:55+02:00
 description: "Article description."
 featured: true 
 draft: true
@@ -8,6 +8,10 @@ toc: false
 codeMaxLines: 10
 codeLineNumbers: false
 figurePositionShow: true
+categories:
+  - Technology
+tags:
+  - post
 ---
 
-**Test**
+**Insert Lead paragraph here.**
