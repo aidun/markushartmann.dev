@@ -7,15 +7,13 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 HUGO_VERSION = "0.76.5"
 
-[context.split1]
-command = "hugo --gc --minify --enableGitInfo"
-HUGO_VERSION = "0.76.5"
-
-[context.split1.environment]
-HUGO_ENV = "production"
-
 [context.deploy-preview]
 command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+HUGO_VERSION = "0.76.5"
 
 [[redirects]]
 from = "/*"
@@ -25,4 +23,13 @@ status = 200
 [[headers]]
   for = "/*"
   [headers.values]
-Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Origin = "*"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "frame-ancestors 'none'; script-src 'strict-dynamic' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script';"
+    cache-control = '''
+    max-age=0,
+    no-cache,
+    no-store,
+    must-revalidate'''
