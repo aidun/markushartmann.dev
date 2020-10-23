@@ -1,0 +1,21 @@
+baseURL = "https://markushartmann.dev/"
+languageCode = "de-de"
+title = "Markus Hartmann"
+paginate = 5
+theme = "hugo-PaperMod"
+
+enableRobotsTXT= true
+buildDrafts= false
+buildFuture= false
+buildExpored= false
+
+[minify]
+disableXML = true
+minifyOutput= true
+
+[params]
+env = "production"
+title = "Markus Hartmann"
+description = ";-)"
+author = "Me"
+
