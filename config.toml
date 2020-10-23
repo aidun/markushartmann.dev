@@ -2,7 +2,7 @@ baseURL = "https://markushartmann.dev/"
 languageCode = "de-de"
 title = "Markus Hartmann"
 paginate = 5
-theme = "hugo-PaperMod"
+theme = "hugo-clarity"
 
 enableRobotsTXT= true
 buildDrafts= false
