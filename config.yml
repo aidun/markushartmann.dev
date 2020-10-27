@@ -1,0 +1,96 @@
+baseURL: "https://markushartmann.dev/"
+title: "Markus Hartmann"
+theme: "hugo-PaperMod"
+enableInlineShortcodes: true
+enableRobotsTXT: true
+paginate: 8
+
+#privacy_pack: true
+googleAnalytics: "UA-140898950-1"
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  description: "IT toughts from Markus Hartmann"
+  author: Markus Hartmann
+  # author: ["Me", "You"] # multiple authors
+  ShowReadingTime: true
+  defaultTheme: light
+  ShowShareButtons: true
+  displayFullLangName: true
+  comments: false
+  profileMode:
+    enabled: false
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog about random IT thoughts, learnings stories and more.
+
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
+
+socialIcons:
+  github: "https://github.com/aidun"
+  linkedin: "https://www.linkedin.com/in/markush1986"
+  twitter:  "https://twitter.com/_markushartmann"
+
+  languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: Archives
+          url: /archives/
+          weight: 5
+        - name: Tags
+          url: /tags/
+          weight: 10
+
+menu:
+  main:
+  - identifier: archive
+    name: archive
+    url: /archive/
+    weight: 3
+  - identifier: tags
+    name: tags
+    url: /tags/
+    weight: 3
+  - identifier: categories
+    name: categories
+    url: /categories/
+    weight: 4
+  - identifier: about
+    name: about
+    url: /about/
+    weight: 5
+  - identifier: disclosure
+    name: disclosure
+    url: /disclosure/
+    weight: 10
+  - identifier: privacy
+    name: privacy
+    url: /privacy/
+    weight: 11
+
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.5

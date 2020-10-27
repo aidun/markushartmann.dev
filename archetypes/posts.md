@@ -4,14 +4,13 @@ date: {{ .Date }}
 description: "Article description."
 featured: true 
 draft: true
-toc: false
+toc: true
 codeMaxLines: 10
-codeLineNumbers: false
-figurePositionShow: true
+codeLineNumbers: true
 categories:
-  - Technology
+  - Example
 tags:
-  - post
+  - Example
 ---
 
 **Insert Lead paragraph here.**
