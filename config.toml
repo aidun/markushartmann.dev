@@ -35,6 +35,9 @@ linkedin = "https://www.linkedin.com/in/markush1986"
 twitter = "https://twitter.com/_markushartmann"
 footer = ["twitter", "github", "linkedin"]
 
+[params.services]
+googleAnalyticsId  = "UA-140898950-1"
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.extensions]
@@ -75,3 +78,4 @@ weight = 4
 url = "/privacy/"
 name = "Privacy"
 weight = 1
+
