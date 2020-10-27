@@ -11,13 +11,24 @@ enableEmoji = true
 enableRobotsTXT = true
 pluralizelisttitles = false
 privacy_pack = true
+googleAnalyticsId  = "UA-140898950-1"
 
 [privacy]
+  [privacy.disqus]
+    disable = true
   [privacy.googleAnalytics]
     anonymizeIP = true
     disable = false
     respectDoNotTrack = true
     useSessionStorage = false
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
 
 [minify]
 disableXML = true
@@ -43,8 +54,8 @@ linkedin = "https://www.linkedin.com/in/markush1986"
 twitter = "https://twitter.com/_markushartmann"
 footer = ["twitter", "github", "linkedin"]
 
-[params.services]
-googleAnalyticsId  = "UA-140898950-1"
+#[params.services]
+#googleAnalyticsId  = "UA-140898950-1"
 
 [markup]
 [markup.goldmark]
