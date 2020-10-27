@@ -10,6 +10,14 @@ rssLimit = 100
 enableEmoji = true
 enableRobotsTXT = true
 pluralizelisttitles = false
+privacy_pack = true
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = false
 
 [minify]
 disableXML = true
