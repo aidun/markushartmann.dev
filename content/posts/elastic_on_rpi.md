@@ -3,7 +3,7 @@ title: "Elastic Cloud on RaspberryPi 4"
 date: 2020-10-27T15:14:41+01:00
 description: "How to setup Elastic-Stack on RaspberryPi 4"
 featured: true 
-draft: true
+draft: false
 toc: true
 codeMaxLines: 10
 codeLineNumbers: false
