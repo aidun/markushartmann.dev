@@ -6,6 +6,9 @@ command = "hugo --gc --minify"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 HUGO_VERSION = "0.76.5"
+[context.production.css]
+bundle = false
+minify = false
 
 [context.deploy-preview]
 command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
@@ -14,6 +17,9 @@ command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 HUGO_VERSION = "0.76.5"
+[context.deploy-preview.css]
+bundle = false
+minify = false
 
 [[redirects]]
 from = "/*"
@@ -33,3 +39,4 @@ status = 200
     no-cache,
     no-store,
     must-revalidate'''
+
