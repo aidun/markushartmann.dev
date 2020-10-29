@@ -34,3 +34,12 @@ status = 200
     no-store,
     must-revalidate'''
 
+[[plugins]]
+package = "netlify-plugin-csp-generator"
+
+  [plugins.inputs]
+  buildDir = "public"
+
+  [plugins.inputs.policies]
+    defaultSrc = "'self' https://cdn.jsdelivr.net/"
+ #   styleSrc = "'unsafe-hashes'"
