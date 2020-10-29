@@ -1,4 +1,4 @@
-#baseURL: "markushartmann.dev"
+baseURL: "https://markushartmann.dev"
 title: "Markus Hartmann"
 theme: "hugo-PaperMod"
 enableInlineShortcodes: true
