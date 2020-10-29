@@ -41,5 +41,8 @@ package = "netlify-plugin-csp-generator"
   buildDir = "public"
 
   [plugins.inputs.policies]
-    defaultSrc = "'self' https://cdn.jsdelivr.net/"
- #   styleSrc = "'unsafe-hashes'"
+    defaultSrc = "'self'"
+    styleSrc = "'self' https://cdn.jsdelivr.net/"
+    scriptSrc = "'self' https://cdn.jsdelivr.net/ https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com"
+    imgSrc = "https://www.google-analytics.com"
+    connectSrc = "https://www.google-analytics.com"
