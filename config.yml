@@ -8,9 +8,9 @@ paginate: 8
 #privacy_pack: true
 googleAnalytics: "UA-140898950-1"
 
-#minify:
+minify:
 #  disableXML: true
-#  minifyOutput: true
+  minifyOutput: false
 
 params:
   env: production
