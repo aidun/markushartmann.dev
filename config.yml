@@ -1,4 +1,4 @@
-baseURL: "https://markushartmann.dev/"
+baseURL: "https://markushartmann.dev"
 title: "Markus Hartmann"
 theme: "hugo-PaperMod"
 enableInlineShortcodes: true
@@ -9,8 +9,8 @@ paginate: 8
 googleAnalytics: "UA-140898950-1"
 
 minify:
-  disableXML: true
-  minifyOutput: true
+#  disableXML: true
+  minifyOutput: false
 
 params:
   env: production

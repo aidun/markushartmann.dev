@@ -27,9 +27,22 @@ status = 200
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "frame-ancestors 'none'; script-src 'strict-dynamic' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script';"
     cache-control = '''
     max-age=0,
     no-cache,
     no-store,
     must-revalidate'''
+
+[[plugins]]
+package = "netlify-plugin-csp-generator"
+
+  [plugins.inputs]
+  buildDir = "public"
+  disableGeneratedPolicies = ["styleSrc"]
+
+  [plugins.inputs.policies]
+    defaultSrc = "'self'"
+    styleSrc = "'self' https://cdn.jsdelivr.net/ 'unsafe-inline'"
+    scriptSrc = "'self' https://cdn.jsdelivr.net/ https://www.google-analytics.com https://ssl.google-analytics.com https://www.googletagmanager.com"
+    imgSrc = "'self' https://www.google-analytics.com"
+    connectSrc = "'self' https://www.google-analytics.com"
